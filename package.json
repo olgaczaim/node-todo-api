@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/olgaczaim/node-todo-api/issues"
   },
-  "homepage": "https://github.com/olgaczaim/node-todo-api#readme"
+  "homepage": "https://github.com/olgaczaim/node-todo-api#readme",
+  "dependencies": {
+    "mongodb": "^3.1.13"
+  }
 }
