@@ -1,63 +1,30 @@
-const mongoose = require('mongoose');
+const express = require('express');
+var bodyParser = require('body-parser');
 
-mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/TodoApp', { useNewUrlParser: true });
-
-//first create a modal
-//var Todo = mongoose.model('Todo', {
-//   text: {
-//       type: String,
-//       required: true,
-//       minlength: 1,
-//       trim: true
-//   } ,
-//    completed: {
-//       type: Boolean,
-//        default: false
-//    },
-//    completedAt: {
-//       type: Date,
-//        default: null
-//    }
-//});
-
-//var newTodo = new Todo({
-//    text: 'Cook dinner'
-//});
-
-//var newTodo = new Todo({
-//    text: '  Edit this video  '
-//});
-//
-//
-//newTodo.save().then((doc) => {
-//    console.log(JSON.stringify(doc, undefined, 2))
-//    //console.log('saved todo', doc)
-//}, (e) => {
-//    console.log(e);
-//});
-
-//mongoose.connection.close();
+var{mongoose} = require('./db/mongoose.js');
+var {Todo} = require('./models/todo');
+var {User} = require('./models/user');
 
 
-//user
-//email - require - trim -type string - set min length 1
+var app = express();
 
-var User = mongoose.model('User', {
-    email: {
-        type: String,
-        required: true,
-        minlength: 1,
-        trim: true
-    }
+app.use(bodyParser.json());
+
+app.post('/todos', (req ,res) => {
+    //console.log(req.body);
+    var todo = new Todo({
+        text:req.body.text
+    });
+
+    todo.save().then((doc) => {
+        res.send(doc);
+    }, (e) => {
+        res.status(400).send(e);
+    });
 });
 
-var newUser = new User({
-    email: 'olgac@live.com'
-});
+//httpstatuses.com
 
-newUser.save().then((doc) => {
-    console.log(JSON.stringify(doc, undefined, 2));
-}, (e) => {
-   console.log(e);
+app.listen(3000, () => {
+    console.log('started on port 3000');
 });
