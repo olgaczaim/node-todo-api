@@ -8,6 +8,7 @@ const {ObjectID} = require('mongodb');
 var{mongoose} = require('./db/mongoose.js');
 var {Todo} = require('./models/todo');
 var {User} = require('./models/user');
+var {authenticate} = require('./middleware/authenticate');
 
 
 var app = express();
@@ -38,7 +39,6 @@ app.get('/todos', (req,res) => {
    })
 });
 
-//Get /todos/123123
 app.get('/todos/:id', (req, res) => {
     var id = req.params.id;
 
@@ -102,7 +102,6 @@ app.patch('/todos/:id', (req, res) => {
 })
 
 
-//users
 app.post('/users', (req, res) => {
    var body = _.pick(req.body, ['email','password']);
    var user = new User(body);
@@ -114,6 +113,11 @@ app.post('/users', (req, res) => {
    }).catch((e) => {
        res.status(400).send(e);
    });
+});
+
+
+app.get('/users/me', authenticate, (req, res) => {
+   res.send(req.user);
 });
 
 app.listen(port, () => {
