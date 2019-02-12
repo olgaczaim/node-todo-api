@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ed616d9-13cd-47bd-bdfe-cd08142ad17a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/server/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tests/server.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/tests/server.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,7 +32,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="376">
@@ -45,6 +44,15 @@
                 <element signature="e#1279#1601#0" />
                 <element signature="e#1643#2232#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/tests/server.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="303" column="42" selection-start-line="303" selection-start-column="42" selection-end-line="303" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -97,9 +105,9 @@
         <option value="$PROJECT_DIR$/server/middleware/authenticate.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server/tests/seed/seed.js" />
-        <option value="$PROJECT_DIR$/server/tests/server.test.js" />
         <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/server/models/user.js" />
+        <option value="$PROJECT_DIR$/server/tests/server.test.js" />
       </list>
     </option>
   </component>
@@ -168,7 +176,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549957160743" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549958112137" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -212,13 +220,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61529000" />
+    <option name="totallyTimeSpent" value="62521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="642" y="0" width="1285" height="942" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990792" visible="true" weight="0.18938775" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990792" visible="true" weight="0.18938775" />
       <window_info id="Structure" order="1" sideWeight="0.50092083" side_tool="true" weight="0.20765027" />
       <window_info id="Favorites" order="2" sideWeight="0.50092083" side_tool="true" weight="0.20765027" />
       <window_info id="npm" order="3" sideWeight="0.50092083" side_tool="true" weight="0.20765027" />
@@ -235,7 +243,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49908924" visible="true" weight="0.32880098" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49908924" visible="true" weight="0.32880098" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50091076" side_tool="true" weight="0.32880098" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -333,13 +341,6 @@
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/tests/server.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/db/mongoose.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -372,6 +373,13 @@
             <element signature="e#1279#1601#0" />
             <element signature="e#1643#2232#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/tests/server.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="303" column="42" selection-start-line="303" selection-start-column="42" selection-end-line="303" selection-end-column="42" />
         </state>
       </provider>
     </entry>
