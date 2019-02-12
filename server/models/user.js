@@ -60,7 +60,7 @@ UserSchema.methods.removeToken = function (token) {
               token: token
           }
       }
-  })
+  });
 };
 
 UserSchema.statics.findByToken = function (token) {
