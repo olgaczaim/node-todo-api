@@ -152,3 +152,7 @@ app.listen(port, () => {
 });
 
 module.exports = {app};
+
+
+//heroku config:set JWT_SECRET=oapklsas222fde4 --app intense-plateau-69598
+//>heroku config --app intense-plateau-69598
